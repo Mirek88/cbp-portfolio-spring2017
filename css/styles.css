@@ -1,0 +1,302 @@
+body {
+    box-sizing: border-box;
+
+}
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 100;
+    background: white;
+}
+a.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -5px;
+    width: 224px;
+    height: 81px;
+}
+.menu ul li {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 40px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 5px;
+}
+@media screen and (max-width: 699px) {
+    .menu {
+        margin: 0 auto;
+    }
+    .menu ul {
+        display: flex;
+        background-color: #173493;
+        color: white;
+        padding-right: 5px;
+        margin-top: 13.5%;
+    }
+    .menu ul li {
+        display: block;
+    }
+    .menu ul li a {
+    color: white;
+    font-size: 15px;
+    }
+    .menu ul li a:hover {
+    background-color: grey;
+    }
+}
+.hero-image {
+    position: relative;
+    margin-top: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image h1 {
+    position: absolute;
+    font-family: 'Maven Pro', sans-serif;
+    top: 25%;
+    font-size: 5em;
+    color: #333333;
+    font-weight: 900;
+}
+.hero-image h2 {
+    position: absolute;
+    top: 60%;
+    font-size: 3em;
+    color: #333333;
+    font-weight: 900;
+}
+@media screen and (max-width: 730px) {
+    .hero-image h1 {
+        font-size: 2.8em;
+        top: 30%;
+    }
+    .hero-image h2 {
+        font-size: 2em;
+        top: 45%;
+    }
+}
+@media screen and (max-width: 570px) {
+    .hero-image h1 {
+        font-size: 2em;
+        top: 40%;
+    }
+    .hero-image h2 {
+        font-size: 1.5em;
+        top: 55%;
+    }
+} 
+
+.services {
+    background: #f9f9f9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.services-wrapper {
+    margin-top: 30px;
+}
+.code-icon {
+   background-image: url("../img/coding.png");
+   background-size: cover;
+   height: 64px;
+   width: 64px;
+}
+.full-stack {
+   background-image: url("../img/full-stack.png");
+   background-size: cover;
+   height: 64px;
+   width: 64px;
+}
+.pm {
+   background-image: url("../img/pm.png");
+   background-size: cover;
+   height: 64px;
+   width: 64px;
+}
+
+@media screen and (max-width: 991px) {
+.row h1 {
+    margin-top: 0;
+}
+.col-md-4 {
+    margin-bottom: 25px;
+}
+.code-icon, .full-stack, .pm {
+    margin: 0 auto;
+}
+.col-md-4 h3, p {
+text-align: center;
+}
+}
+.col-md-4 p {
+    font-size: 1.2em;
+}
+.portfolio {
+    height: auto;
+    padding-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.row h1 {
+    text-align: center;
+}
+
+.koorzy {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    background-image: url("../img/Koorzy.cz.png");
+    background-size: cover;
+    border-radius: 3%;
+}
+.koorzy a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.akademie-inovaci {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    background-image: url("../img/innovation-academy.png");
+    background-size: cover;
+    border-radius: 3%;
+
+}
+.akademie-inovaci a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.prirozene-vcelareni {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    background-image: url("../img/prirozenevcelareni.png");
+    background-size: cover;
+    border-radius: 3%;
+
+}
+.prirozene-vcelareni a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width: 991px) {
+.portfolio {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+.portfolio a {
+    margin-bottom: 15px;
+}
+}
+.form-inner {
+    background-color: #F0F0F0;
+    padding: 30px 60px;
+    border-radius: 3px;
+}
+.form label {
+    display: block;
+    color: #323c47;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.2em;
+    font-weight: 1000;
+    
+}
+.form input {
+    width: 100%;
+    display: block;
+    border: 1px solid #e9eff4;
+    line-height: 45px;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.form textarea {
+    line-height: 30px;
+    padding: 15px;
+    height: 150px;
+    width: 100%;
+    display: block;
+    border: 1px solid #e9eff4;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.button {
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.15em;
+    margin-top: 15px;
+    overflow: visible;
+    border: 0;
+    border-radius: 3px;
+
+}
+.button-green {
+    line-height: 35px;
+    height: 35px; 
+    background: #56a62b;
+    padding: 0 20px;
+}
+.footer {
+    padding-top: 30px;
+}
+.footer p a {
+    color: #818791;
+}
+.footer-logo {
+    position: relative;
+    margin-left: -40px;
+    margin-top: -60px;
+}
+.phone {
+margin-top: -15px;
+}
+@media screen and (max-width: 991px) {
+.col-md-4 p.phone, p.mail {
+    margin-left: -510px;        
+    }
+}
+.footer-title {
+    margin-bottom: 15px;
+    padding-top: 0;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer ul li a {
+    font-size: 1.2em;
+    color: #818791;
+}
